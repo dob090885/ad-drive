@@ -1,87 +1,114 @@
-body {
+* {
     margin: 0;
-    background: #000;
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header {
-    padding: 20px;
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #000;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
 }
 
 .logo {
-    width: 180px;
+    width: 160px;
 }
 
 nav a {
     color: #d4af37;
-    margin: 0 20px;
     text-decoration: none;
+    margin-left: 25px;
     font-weight: 500;
 }
 
 nav a:hover {
-    color: #ffffff;
+    color: white;
 }
 
 .hero {
-    padding: 100px 20px;
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1503376780353-7e6692767b70') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.overlay {
+    background: rgba(0,0,0,0.7);
+    padding: 60px;
+    width: 100%;
 }
 
 .hero h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 42px;
+    font-size: 48px;
     color: #d4af37;
 }
 
-.hero-small {
-    padding: 60px 20px;
-}
-
-.services {
-    padding: 60px 20px;
-}
-
-.service-box {
-    max-width: 600px;
-    margin: auto;
-    line-height: 2;
+.hero p {
+    margin: 20px 0;
     font-size: 18px;
 }
 
-.btn-gold {
+.btn {
     background: #d4af37;
+    padding: 15px 35px;
     color: black;
-    padding: 14px 30px;
     text-decoration: none;
     font-weight: bold;
-    display: inline-block;
-    margin-top: 25px;
     border-radius: 4px;
 }
 
-.btn-gold:hover {
+.btn:hover {
     background: white;
 }
 
-.map {
+.about {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 60px;
+    gap: 30px;
+}
+
+.card {
+    background: #111;
     padding: 40px;
+    border: 1px solid #d4af37;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    background: #d4af37;
+    color: black;
 }
 
 footer {
-    padding: 20px;
+    padding: 30px;
+    text-align: center;
     background: #111;
-    color: #aaa;
+    color: #888;
 }
 
-.whatsapp-float {
+.whatsapp {
     position: fixed;
     bottom: 20px;
     right: 20px;
     background: #25D366;
     color: white;
-    padding: 15px 20px;
+    padding: 15px 25px;
     border-radius: 30px;
     text-decoration: none;
     font-weight: bold;
