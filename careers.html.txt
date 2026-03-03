@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Careers | AD Drive</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <img src="logo.jpg" class="logo">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="careers.html">Careers</a>
+        <a href="contact.html">Contact</a>
+        <a href="impressum.html">Impressum</a>
+    </nav>
+</header>
+
+<section class="hero-small">
+    <h1>Become a Driver at AD Drive</h1>
+    <p>Join a premium chauffeur company in Munich.</p>
+</section>
+
+<section class="services">
+    <h2>Requirements</h2>
+    <div class="service-box">
+        <p>Valid EU Driving License</p>
+        <p>Personenbeförderungsschein (P-Schein preferred)</p>
+        <p>Professional appearance</p>
+        <p>Customer-focused mindset</p>
+        <p>Clean driving record</p>
+    </div>
+
+    <a href="https://wa.me/YOURNUMBER" class="btn-gold">
+        Apply via WhatsApp
+    </a>
+</section>
+
+<footer>
+<p>© 2026 AD Drive</p>
+</footer>
+
+<a href="https://wa.me/YOURNUMBER" class="whatsapp-float">
+    WhatsApp
+</a>
+
+</body>
+</html>
