@@ -1,114 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AD Drive | Premium Taxi & Chauffeur Service Munich</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AD Drive | Premium Chauffeur Service Munich</title>
 
-  <meta name="description" content="AD Drive – Premium Taxi & Chauffeur Service in Munich. Luxury airport transfers and business rides in München.">
-  <meta name="keywords" content="Taxi Munich, Chauffeur Munich, Airport Transfer Munich, Premium Taxi München">
-  <meta name="author" content="AD Drive Munich">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 
-  <link rel="stylesheet" href="style.css">
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "TaxiService",
-    "name": "AD Drive",
-    "areaServed": "Munich",
-    "url": "https://dob090885.github.io/ad-drive/"
-  }
-  </script>
 </head>
-
 <body>
 
 <header>
-  <div class="logo">AD Drive</div>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#careers">Careers</a>
-    <a href="#contact">Contact</a>
-    <a href="index-de.html">DE</a>
-  </nav>
+    <div class="container">
+        <img src="logo.jpg" class="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="careers.html">Careers</a>
+            <a href="contact.html">Contact</a>
+            <a href="impressum.html">Impressum</a>
+        </nav>
+    </div>
 </header>
 
 <section class="hero">
-  <video autoplay muted loop playsinline class="hero-video">
-    <source src="https://cdn.coverr.co/videos/coverr-night-driving-5174/1080p.mp4" type="video/mp4">
-  </video>
-  <div class="hero-content fade-in">
-    <h1>Premium Chauffeur Service in Munich</h1>
-    <p>Luxury. Reliability. Professionalism.</p>
-    <a href="#contact" class="btn">Book Now</a>
-  </div>
+    <div class="overlay">
+        <h1>Executive Chauffeur Service</h1>
+        <p>Luxury transportation in Munich & Freising</p>
+        <a href="https://wa.me/YOURNUMBER" class="btn">Book Now</a>
+    </div>
 </section>
 
-<section id="about" class="section fade-in">
-  <h2>About AD Drive</h2>
-  <p>Founded in 2026, AD Drive provides premium taxi and chauffeur services in Munich. 
-  We specialize in airport transfers, business travel, and luxury private rides.</p>
+<section class="about">
+    <h2>About AD Drive</h2>
+    <p>
+        AD Drive offers professional chauffeur and airport transfer services 
+        with premium comfort, discretion, and reliability.
+    </p>
 </section>
 
-<section id="services" class="section dark fade-in">
-  <h2>Our Services</h2>
-  <ul>
-    <li>Airport Transfer Munich</li>
-    <li>Business Chauffeur</li>
-    <li>VIP & Private Rides</li>
-    <li>Long Distance Travel</li>
-  </ul>
-</section>
-
-<section id="careers" class="section fade-in">
-  <h2>Drive With Us</h2>
-  <p>We are hiring professional drivers in Munich.</p>
-  <ul>
-    <li>Valid German driving license</li>
-    <li>Passenger transport license (P-Schein preferred)</li>
-    <li>Professional appearance</li>
-    <li>Flexible availability</li>
-  </ul>
-  <a href="https://wa.me/49123456789" class="btn">Apply via WhatsApp</a>
-</section>
-
-<section id="contact" class="section dark fade-in">
-  <h2>Contact Us</h2>
-  <p>Email: info@addrive.de</p>
-  <p>Phone: +49 123 456789</p>
-
-  <iframe 
-    src="https://www.google.com/maps?q=Munich,Germany&output=embed"
-    width="100%" height="300" style="border:0;" allowfullscreen="">
-  </iframe>
+<section class="services">
+    <div class="card">Airport Transfers</div>
+    <div class="card">Business Travel</div>
+    <div class="card">VIP Service</div>
+    <div class="card">Long Distance Rides</div>
 </section>
 
 <footer>
-  <p>© 2026 AD Drive | Munich</p>
-  <a href="impressum.html">Impressum</a>
+    © 2026 AD Drive | Premium Mobility Munich
 </footer>
 
-<script>
-  const faders = document.querySelectorAll('.fade-in');
-
-  const appearOptions = {
-    threshold: 0.2
-  };
-
-  const appearOnScroll = new IntersectionObserver(function(entries, observer) {
-    entries.forEach(entry => {
-      if (!entry.isIntersecting) return;
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
-    });
-  }, appearOptions);
-
-  faders.forEach(fader => {
-    appearOnScroll.observe(fader);
-  });
-</script>
+<a href="https://wa.me/YOURNUMBER" class="whatsapp">WhatsApp</a>
 
 </body>
 </html>
