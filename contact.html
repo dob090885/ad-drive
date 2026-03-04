@@ -4,42 +4,46 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact | AD Drive</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
 <header>
-    <img src="logo.jpg" class="logo">
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="careers.html">Careers</a>
-        <a href="contact.html">Contact</a>
-        <a href="impressum.html">Impressum</a>
-    </nav>
+    <div class="nav-container">
+        <img src="logo.jpg" class="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="careers.html">Careers</a>
+            <a href="contact.html">Contact</a>
+            <a href="impressum.html">Impressum</a>
+        </nav>
+    </div>
 </header>
 
-<section class="hero-small">
-<h1>Contact Us</h1>
-<p>For bookings or business inquiries.</p>
+<section class="section">
+    <div class="content">
+        <h2>Contact Us</h2>
+        <p>For bookings and business inquiries.</p>
+    </div>
 </section>
 
-<section class="services">
-<form action="https://formspree.io/f/YOURFORMID" method="POST">
-<input type="text" name="name" placeholder="Your Name" required>
-<input type="email" name="email" placeholder="Your Email" required>
-<textarea name="message" placeholder="Your Message" required></textarea>
-<button type="submit" class="btn-gold">Send Message</button>
-</form>
+<section class="section-dark">
+    <div class="content">
+        <form action="https://formspree.io/f/YOURFORMID" method="POST" style="max-width:600px;">
+            <input type="text" name="name" placeholder="Your Name" required style="width:100%; padding:15px; margin-bottom:15px;">
+            <input type="email" name="email" placeholder="Your Email" required style="width:100%; padding:15px; margin-bottom:15px;">
+            <textarea name="message" placeholder="Your Message" required style="width:100%; padding:15px; height:150px; margin-bottom:15px;"></textarea>
+            <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+    </div>
 </section>
 
 <footer>
-<p>© 2026 AD Drive</p>
+    © 2026 AD Drive · Premium Mobility Munich
 </footer>
 
-<a href="https://wa.me/YOURNUMBER" class="whatsapp-float">
-    WhatsApp
-</a>
+<a href="https://wa.me/YOURNUMBER" class="whatsapp-btn">WhatsApp</a>
 
 </body>
 </html>
