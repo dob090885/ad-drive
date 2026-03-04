@@ -164,5 +164,14 @@ display: flex;
 
 }
 
+@media(max-width: 768px) {
+header {
+height: 80px;
+}
+
+.logo {
+height: 60px;
+}
+}
 
 
