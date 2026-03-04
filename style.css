@@ -115,7 +115,48 @@ footer {
     font-weight: bold;
 }
 
+.menu-toggle {
+display: none;
+flex-direction: column;
+cursor: pointer;
+}
 
+.menu-toggle span {
+height: 3px;
+width: 25px;
+background: white;
+margin: 4px 0;
+transition: 0.3s;
+}
 
+#nav-links {
+display: flex;
+}
 
+@media(max-width: 768px) {
 
+#nav-links {
+position: absolute;
+top: 80px;
+right: 0;
+background: #000;
+width: 200px;
+flex-direction: column;
+align-items: center;
+display: none;
+padding: 20px 0;
+}
+
+#nav-links a {
+margin: 15px 0;
+}
+
+#nav-links.active {
+display: flex;
+}
+
+.menu-toggle {
+display: flex;
+}
+
+}
