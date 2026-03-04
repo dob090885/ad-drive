@@ -18,7 +18,7 @@ body {
 }
 
 .logo {
-    width: 160px;
+    height: 70px;
     object-fit: contain;
 }
 
@@ -114,4 +114,5 @@ footer {
     text-decoration: none;
     font-weight: bold;
 }
+
 
